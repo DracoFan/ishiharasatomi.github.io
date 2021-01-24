@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+	<meta name="author" content="DarkDraco" />
+    <title>Details</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="layui/css/layui.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/gloable.css" />
+    <link rel="stylesheet" href="css/nprogress.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Salazar Slytherin</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="article.html">Blog</a></li>
+                        <li><a href="message.html">Message</a></li>
+						<li><a href="diary.html">Diary</a></li>
+                        <li><a href="link.html">Link</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="blog-user">
+                    <i class="fa fa-qq"></i>
+                </a>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>蓝图之操作系统</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="https://github.com/DracoFan/DracoFan" target="_blank" class="fc-link">DracoFan</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">1</i></small>
+                                    <small class="ml10">更新于 <label>2021-01-21 20:14:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">21</span>
+                                <span class="month fs-18">1<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2021</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+                                  一、操作系统的基本概念
+								<br>
+								&nbsp;&nbsp;操作系统是连接在硬件平台上的第一层软件，操作系统是一个大型的软件，它负责计算机的全部软、硬件资源的分配与回收、控制和协调工作，使整个计算机系统实现高效率和自动化。一般来说，操作系统具有以下一些功能：
+								<br>&nbsp;&nbsp;1.对CPU进行管理和调度
+								<br>计算机系统中最重要的部件是中央处理器，它是计算机的心脏。在计算机的运行中，为了等待I/O（输入/输出）的操作，CPU往往空运行。为了充分利用CPU的资源，使一个或多个用户的程序能合理有效地使用CPU，操作系统能根据需要解决CPU分配给哪个用户程序使用，占用多长时间，下一个又轮到哪个程序运行等问题，以提高CPU的资源利用率，也就是对CPU进行管理和调度。
+								<br>&nbsp;&nbsp;2.对存储进行管理和调度
+								<br>在计算机系统中，主存储器也是主要部件之一。只有当程序在主存储器时，它才有可能到处理器上执行，操作系统的作用就是合理组织与分配存储空间，使主存储器的资源得到充分利用。
+								<br>&nbsp;&nbsp;3.对输入/输出进行管理
+								<br>合理组织与使用除了CPU以外的所有输入/输出设备，使用户不必具体了解设备以及接口的技术细节，就可以方便地对设备进行操作。
+								<br>&nbsp;&nbsp;4.对文件系统及数据库进行管理
+								<br>合理组织、管理辅助存储器中的信息，以便于存储与检索，达到保证安全、方便实用的目的。起初，计算机的运行管理和具体操作都由使用者自己承担。随着计算机速度的提高，对计算机的运行进行人工管理变得越发不可能，于是人们开始编制一些批处理系统，来取代原来的“人工干预”，从而使整个计算机系统的处理能力得到了提高。可以说这是操作系统的雏形。后来随着计算机硬件的更新换代，批处理程序变得更加复杂和庞大，并逐步演化成了现在的操作系统。
+								<br><br><br>&nbsp;&nbsp;&nbsp;
+								二、常见操作系统
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 DarkDraco的个人博客所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">蓝图之操作系统</a>
+                                    </p>
+                                    <p class="f-toe">
+                                        本文网址：
+                                        <a href="https://www.cnblogs.com/kiwenzhang/p/10894408.html">http://kaiwanxiao.baidu.com</a>
+                                    </p>
+                                </div>
+                                <div id="aplayer" style="margin:5px 0"></div>
+                                <h6>延伸阅读</h6>
+                                <ol class="b-relation"></ol>
+                            </div>
+                            <div class="bdsharebuttonbox share" data-tag="share_1">
+                                <ul>
+                                    <li class="f-praise"><span><a class="s-praise"></a></span></li>
+                                    <li class="f-weinxi"><a class="s-weinxi" data-cmd="weixin"></a></li>
+                                    <li class="f-sina"><a class="s-sina" data-cmd="tsina"></a></li>
+                                    <li class="f-qq" href="#"><i class="fa fa-qq"></i></li>
+                                    <li class="f-qzone"><a class="s-qzone" data-cmd="qzone"></a></li>
+                                </ul>
+                            </div>
+                            <div class="f-cb"></div>
+                            <div class="mt20 f-fwn fs-24 fc-grey comment" style="border-top: 1px solid #e1e2e0; padding-top: 20px;">
+                            </div>
+                            <fieldset class="layui-elem-field layui-field-title">
+                                <legend>发表评论</legend>
+                                <div class="layui-field-box">
+                                    <div class="leavemessage" style="text-align:initial">
+                                        <form class="layui-form blog-editor" action="">
+                                            <input type="hidden" name="articleid" id="articleid" value="@Model.ID">
+                                            <div class="layui-form-item">
+                                                <textarea name="editorContent" lay-verify="content" id="remarkEditor" placeholder="请输入内容" class="layui-textarea layui-hide"></textarea>
+                                            </div>
+                                            <div class="layui-form-item">
+                                                <button class="layui-btn" lay-submit="formLeaveMessage" lay-filter="formLeaveMessage">提交留言</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <ul class="blog-comment" id="blog-comment"></ul>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                        <a href="javascript:void(0)" class="github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="#" class="qq" target="_blank" ><i class="fa fa-qq"></i></a>
+                        <a href="#" class="email" target="_blank" ><i class="fa fa-envelope"></i></a>
+                        <a href="javascript:void(0)" class="weixin"><i class="fa fa-weixin"></i></a>
+                    </div>
+                    <p class="mt05">
+                       Copyright &copy; 2021.Company name All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="layui/layui.js"></script>
+    <script src="js/yss/gloable.js"></script>
+    <script src="js/plugins/nprogress.js"></script>
+    <script src="js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script> 
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>
