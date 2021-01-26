@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+	<meta name="author" content="DarkDraco" />
+    <title>Details</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="layui/css/layui.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/gloable.css" />
+    <link rel="stylesheet" href="css/nprogress.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+	<link href="images/logo.ico" rel="icon" type="image/x-ico">
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Salazar Slytherin</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="article.html">Blog</a></li>
+                        <li><a href="message.html">Message</a></li>
+						<li><a href="diary.html">Diary</a></li>
+                        <li><a href="link.html">Link</a></li>
+						<li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <a href="/auth/qq" class="blog-user">
+                    <i class="fa fa-qq"></i>
+                </a>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>OWASP虚拟机靶场搭建</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="https://github.com/DracoFan/DracoFan" target="_blank" class="fc-link">DracoFan</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">1</i></small>
+                                    <small class="ml10">更新于 <label>2021-01-26 23:54:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">26</span>
+                                <span class="month fs-18">1<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2021</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+                                  <h3>OWASP（Broken Web Applications Project,是一组易受攻击的Open Web应用程序安全项目,分布在VMware格式的虚拟机上,包含了当前几乎全部类型的漏洞,例如：SQL注入、XSS攻击等等。它是由一家非营利性组织——OWASP基金会提供持续性支持,可免费下载与使用。</h3>
+								&nbsp;&nbsp;&nbsp;&nbsp;OWASP官网：<a href="https://www.owasp.org">https://www.owasp.org</a>
+								<br>&nbsp;&nbsp;&nbsp;&nbsp;OWASP中国官网：<a href="http://www.owasp.org.cn/">http://www.owasp.org.cn/</a>
+								<br><h3>Step 1:下载OWASP</h3><a href="https://jaist.dl.sourceforge.net/project/owaspbwa/1.2/OWASP_Broken_Web_Apps_VM_1.2.7z">https://jaist.dl.sourceforge.net/project/owaspbwa/1.2/OWASP_Broken_Web_Apps_VM_1.2.7z</a>
+								<h3>Step 2:解压,打开VMware,找到解压缩的文件夹的路径,选择.vmx文件使用VMware打开,网络选择NAT模式,出现如下:</h3>
+                                <img src="F:\PersonalPage\ishiharasatomi.github.io\aimages\1.jpg">
+                                <h3>Step 3:运行,等待片刻,默认依次输入login:root ; password:owaspbwa ; 
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;注意password默认不可见,如下图:</h3>
+                                <img src="F:\PersonalPage\ishiharasatomi.github.io\aimages\2.jpg">
+                                <h3>Step 4:浏览器访问所给IP,如图:</h3>
+                                <img src="F:\PersonalPage\ishiharasatomi.github.io\aimages\3.jpg">
+                                <h3>以上就是OWASP虚拟机的搭建,你可以选择Damn Vulnerable Web Applicatio(DVWA),用户名和密码都是admin。</h3>
+                                <img src="F:\PersonalPage\ishiharasatomi.github.io\aimages\4.jpg">
+                                
+                                
+                                <div id="aplayer" style="margin:5px 0"></div>
+                                <h6>延伸阅读</h6>
+                                <ol class="b-relation"><h3><a href="http://www.baidu.com">文件上传漏洞渗透及防御</a></h3></ol>
+                            </div>
+                            <div class="bdsharebuttonbox share" data-tag="share_1" data-bd-bind="1611508159558">
+                                <ul>
+                                    <li class="f-praise"><span><a class="s-praise"></a></span></li>
+                                    <li class="f-weinxi"><a class="s-weinxi" data-cmd="weixin"></a></li>
+                                    <li class="f-sina"><a class="s-sina" data-cmd="tsina"></a></li>
+                                    <li class="f-qq" href="#"><i class="fa fa-qq"></i></li>
+                                    <li class="f-qzone"><a class="s-qzone" data-cmd="qzone"></a></li>
+                                </ul>
+                            </div>
+                            <div class="f-cb"></div>
+                            <div class="mt20 f-fwn fs-24 fc-grey comment" style="border-top: 1px solid #e1e2e0; padding-top: 20px;">
+                            </div>
+                             <fieldset class="layui-elem-field layui-field-title">
+                            <legend>发表评论</legend>
+                            <br>
+                            <div class="textarea-wrap message" id="textarea-wrap">
+            <form class="layui-form blog-editor" action="">
+                <div class="layui-form-item">
+                    <textarea name="editorContent" lay-verify="content" id="remarkEditor" placeholder="Write here" class="layui-textarea layui-hide"></textarea>
+                </div>
+                <div class="layui-form-item">
+                    <button class="layui-btn" lay-submit="formLeaveMessage" lay-filter="formLeaveMessage">提交</button>
+                </div>
+            </form>
+        </div>
+                        </fieldset>
+                        <ul class="blog-comment" id="blog-comment">
+                            
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">		
+                        <a href="https://github.com/DracoFan/ishiharasatomi.github.io" class="github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.instagram.com/fygodyf/" class="instagram" target="_blank" ><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/xWVFq3UPSg8YsDl" class="twitter" target="_blank" ><i class="fa fa-twitter"></i></a>
+                        <a href="https://m.facebook.com/profile.php?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="https://weibo.com/u/7213226429/home?wvr=5" class="weibo"><i class="fa fa-weibo"></i></a>
+                    </div>
+                    <p class="mt05">
+                       Copyright &copy; 2021.Company name All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <script src="layui/layui.js"></script>
+    <script src="js/yss/gloable.js"></script>
+    <script src="js/plugins/nprogress.js"></script>
+    <script>NProgress.start();</script>
+    <script src="js/pagemessage.js"></script>
+    <script>NProgress.start();</script>
+    <script> 
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+	<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+	<!--<script>
+    document.addEventListener('DOMContentLoaded',function() {
+        var img = 'https://' + "img.shisanyue.site\/upload\/2020\/06\/6132e03d493d4063b7a49d6f13320a48.jpeg";
+        var title = "\u5FB7\u9C81\u7EB3\u9152\u5E97";
+        window._bd_share_config = {
+            common: {
+                "bdSnsKey": {},
+                "bdText": title,
+                "bdMini": "2",
+                "bdMiniList": false,
+                "bdPic": img,
+                "bdStyle": "0",
+                "bdSize": "32"
+            },
+            share: {},
+            image: {"viewList": ["weixin", "tsina", "qzone"], "viewText": "分享到：", "viewSize": "32"},
+            selectShare: {"bdContainerClass": null, "bdSelectMiniList": ["weixin", "tsina", "qzone"]}
+        };
+
+        (document.getElementsByTagName('head')[0] || document.body).appendChild(document.createElement('script')).src = '/api/js/share.js?v=89860593.js';
+    })
+</script>-->
+<script>
+    document.addEventListener('DOMContentLoaded',function() {
+        var img = 'https://' + "img.shisanyue.site\/upload\/2020\/06\/6132e03d493d4063b7a49d6f13320a48.jpeg";
+        var title = "\u5FB7\u9C81\u7EB3\u9152\u5E97";
+        window._bd_share_config = {
+            common: {
+                "bdSnsKey": {},
+                "bdText": title,
+                "bdMini": "2",
+                "bdMiniList": false,
+                "bdPic": img,
+                "bdStyle": "0",
+                "bdSize": "32"
+            },
+            share: {},
+            image: {"viewList": ["weixin", "tsina", "qzone"], "viewText": "分享到：", "viewSize": "32"},
+            selectShare: {"bdContainerClass": null, "bdSelectMiniList": ["weixin", "tsina", "qzone"]}
+        };
+
+        (document.getElementsByTagName('head')[0] || document.body).appendChild(document.createElement('script')).src = '/api/js/share.js?v=89860593.js';
+    })
+</script>
+
+</body>
+</html>
