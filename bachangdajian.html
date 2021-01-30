@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width" />
-	<meta name="author" content="DarkDraco" />
+    <meta name="author" content="DarkDraco" />
     <title>Details</title>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="layui/css/layui.css" />
@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="css/gloable.css" />
     <link rel="stylesheet" href="css/nprogress.css" />
     <link rel="stylesheet" href="css/blog.css" />
-	<link href="images/logo.ico" rel="icon" type="image/x-ico">
+    <link href="images/logo.ico" rel="icon" type="image/x-ico">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
     <div class="header">
     </div>
@@ -27,9 +29,9 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="article.html">Blog</a></li>
                         <li><a href="message.html">Message</a></li>
-						<li><a href="diary.html">Diary</a></li>
+                        <li><a href="diary.html">Diary</a></li>
                         <li><a href="link.html">Link</a></li>
-						<li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </nav>
                 <a href="/auth/qq" class="blog-user">
@@ -43,11 +45,12 @@
             </div>
         </div>
     </header>
-    <div class="doc-container" id="doc-container">
+
+<div class="doc-container" id="doc-container">
         <div class="container-fixed">
             <div class="col-content" style="width:100%">
                 <div class="inner">
-                    <article class="article-list">
+                    <article class="article-content">
                         <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
                         <section class="article-item">
                             <aside class="title" style="line-height:1.5;">
@@ -66,24 +69,25 @@
                                 <span class="year fs-18">2021</span>
                             </div>
                             <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
-                                  <h3><strong>OWASP（Broken Web Applications Project,是一组易受攻击的Open Web应用程序安全项目,分布在VMware格式的虚拟机上,包含了当前几乎全部类型的漏洞,例如：SQL注入、XSS攻击等等。它是由一家非营利性组织——OWASP基金会提供持续性支持,可免费下载与使用。</strong></h3>
-								&nbsp;&nbsp;&nbsp;&nbsp;OWASP官网：<a href="https://www.owasp.org">https://www.owasp.org</a>
-								<br>&nbsp;&nbsp;&nbsp;&nbsp;OWASP中国官网：<a href="http://www.owasp.org.cn/">http://www.owasp.org.cn/</a>
-								<br><h3><strong>Step 1</strong>:<br>&nbsp;&nbsp;&nbsp;&nbsp;下载OWASP</h3><a href="https://jaist.dl.sourceforge.net/project/owaspbwa/1.2/OWASP_Broken_Web_Apps_VM_1.2.7z">&nbsp;&nbsp;&nbsp;&nbsp;https://jaist.dl.sourceforge.net/project/owaspbwa/1.2/OWASP_Broken_Web_Apps_VM_1.2.7z</a>
-								<h3><strong>Step 2</strong>:<br>&nbsp;&nbsp;&nbsp;&nbsp;解压,打开VMware,找到解压缩的文件夹的路径,选择.vmx文件使用VMware打开,网络选择NAT模式,出现如下:</h3>
+                                  <h2><strong>OWASP</strong></h2>
+                                  <h3>Broken Web Applications Project,是一组易受攻击的Open Web应用程序安全项目,分布在VMware格式的虚拟机上,包含了当前几乎全部类型的漏洞,例如：SQL注入、XSS攻击等等。它是由一家非营利性组织——OWASP基金会提供持续性支持,可免费下载与使用。</h3>
+                                &nbsp;&nbsp;OWASP官网：<a href="https://www.owasp.org">https://www.owasp.org</a>
+                                <br>&nbsp;&nbsp;OWASP中国官网：<a href="http://www.owasp.org.cn/">http://www.owasp.org.cn/</a>
+                                <br><h3><strong>Step 1</strong>:<br>&nbsp;下载OWASP</h3><a href="https://jaist.dl.sourceforge.net/project/owaspbwa/1.2/OWASP_Broken_Web_Apps_VM_1.2.7z">&nbsp;https://jaist.dl.sourceforge.net/project/owaspbwa/1.2/OWASP_Broken_Web_Apps_VM_1.2.7z</a>
+                                <h3><strong>Step 2</strong>:<br>&nbsp;解压,打开VMware,找到解压缩的文件夹的路径,选择.vmx文件使用VMware打开,网络选择NAT模式,出现如下:</h3>
                                 <img src="1.jpg" width="700px">
-                                <h3><strong>Step 3</strong>:<br>&nbsp;&nbsp;&nbsp;&nbsp;运行,等待片刻,默认依次输入login:root ; password:owaspbwa ; 
-                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;注意password默认不可见,如下图:</h3>
+                                <h3><strong>Step 3</strong>:<br>&nbsp;运行,等待片刻,默认依次输入login:root ; password:owaspbwa ; 
+                                    <br>&#9672;&nbsp;注意password默认不可见,如下图:</h3>
                                 <img src="2.jpg" width="700px">
-                                <h3><strong>Step 4</strong>:<br>&nbsp;&nbsp;&nbsp;&nbsp;浏览器访问所给IP,如图:</h3>
+                                <h3><strong>Step 4</strong>:<br>&nbsp;浏览器访问所给IP,如图:</h3>
                                 <img src="3.jpg" width="700px">
-                                <h3>&nbsp;&nbsp;&nbsp;&nbsp;以上就是OWASP虚拟机的搭建,你可以选择Damn Vulnerable Web Applicatio(DVWA),用户名和密码都是admin。</h3>
+                                <h3>&#9672;&nbsp;以上就是OWASP虚拟机的搭建,你可以选择Damn Vulnerable Web Applicatio(DVWA),用户名和密码都是admin。</h3>
                                 <img src="4.jpg" width="700px">
                                 
                                 
                                 <div id="aplayer" style="margin:5px 0"></div>
-                                <h6>延伸阅读</h6>
-                                <ol class="b-relation"><h3><a href="http://www.baidu.com">文件上传漏洞渗透及防御</a></h3></ol>
+                                <h6>下一篇</h6>
+                                <ol class="b-relation"><h3><a href="sqlzhuru.html">常见SQL注入的方法</a></h3></ol>
                             </div>
                             <div class="bdsharebuttonbox share" data-tag="share_1">
                                 <ul>
@@ -118,16 +122,16 @@
         </div>
     </div>
 </div>
-    <footer class="grid-footer">
+    <footer class="grid-footer"> 
         <div class="footer-fixed">
             <div class="copyright">
                 <div class="info">
-                    <div class="contact">		
+                    <div class="contact">       
                         <a href="https://github.com/DracoFan/ishiharasatomi.github.io" class="github" target="_blank"><i class="fa fa-github"></i></a>
                         <a href="https://www.instagram.com/fygodyf/" class="instagram" target="_blank" ><i class="fa fa-instagram"></i></a>
                         <a href="https://twitter.com/xWVFq3UPSg8YsDl" class="twitter" target="_blank" ><i class="fa fa-twitter"></i></a>
                         <a href="https://m.facebook.com/profile.php?ref=bookmarks" class="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="https://weibo.com/u/7213226429/home?wvr=5" class="weibo"><i class="fa fa-weibo"></i></a>
+                        <a href="https://weibo.com/u/7213226429/home?wvr=5" class="weibo"><i class="fa fa-weibo"></i></a>
                     </div>
                     <p class="mt05">
                        Copyright &copy; 2021.Company name All rights reserved.
@@ -147,8 +151,8 @@
             NProgress.done();
         };
     </script>
-	<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
-	<script>
+    <script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+    <script>
     document.addEventListener('DOMContentLoaded',function() {
         var img = 'https://' + "img.shisanyue.site\/upload\/2020\/03\/\u4EE3\u7801,\u7F16\u7A0B,SWIFT_\u5343\u53F6\u7F51.png";
         var title = "\u5341\u4E09\u6708v1.0.0\u6B63\u5F0F\u4E0A\u7EBF";
@@ -166,9 +170,10 @@
             image: {"viewList": ["weixin", "tsina", "qzone"], "viewText": "分享到：", "viewSize": "32"},
             selectShare: {"bdContainerClass": null, "bdSelectMiniList": ["weixin", "tsina", "qzone"]}
         };
-
+    
         (document.getElementsByTagName('head')[0] || document.body).appendChild(document.createElement('script')).src = '/api/js/share.js?v=89860593.js';
     })
 </script>
+
 </body>
 </html>
